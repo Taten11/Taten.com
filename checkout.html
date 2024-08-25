@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+
+    <main>
+        <section id="checkout">
+            <h2>Order Summary</h2>
+            <ul id="checkout-items"></ul>
+            <form id="checkout-form">
+                <label for="shipping-address">Shipping Address:</label>
+                <input type="text" id="shipping-address" required>
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" required>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

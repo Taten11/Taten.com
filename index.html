@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-Commerce Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Simple E-Commerce Site</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+            <a href="admin.html">Admin Panel</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="promotions">
+            <h2>Current Promotions</h2>
+            <p>Save 10% on all items!</p>
+        </section>
+
+        <section id="search">
+            <input type="text" id="search-input" placeholder="Search products...">
+            <button onclick="searchProducts()">Search</button>
+        </section>
+
+        <section id="product-catalog">
+            <h2>Products</h2>
+            <!-- Product items will be dynamically inserted here -->
+        </section>
+
+        <section id="wishlist">
+            <h2>My Wishlist</h2>
+            <ul id="wishlist-items"></ul>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
